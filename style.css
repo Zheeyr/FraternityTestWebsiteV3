@@ -643,7 +643,6 @@ body.aides {
     background-color: #1d1d1d;
     color: white;
     font-family: 'Lexend', sans-serif;
-    /* padding-top: 60px; Ajustez selon la hauteur de votre header */
 }
 
 .help-section {
@@ -815,6 +814,11 @@ body.aides {
 
 #back-to-top i {
     font-size: 18px;
+}
+
+body.modal-open {
+    overflow: hidden;
+    padding-right: 15px;
 }
 
 @keyframes modalFadeIn {
