@@ -1167,6 +1167,7 @@ body.aides {
 @media screen and (max-width: 1024px) {
     header {
         padding: 20px;
+        position: relative;
     }
 
     nav ul {
