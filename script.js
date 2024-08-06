@@ -83,6 +83,22 @@ document.addEventListener('DOMContentLoaded', () => {
     if (patchList && modal && modalDetails && closeModal) {
         const notes = [
             {
+                date: "06 Août 2024",
+                title: "Patchnote : 3.1.3",
+                description: "Grosse mise à jour du téléphone & Système Samu.",
+                details: `
+                    <p><span class="underline-green">Maj :</span></p>
+                    <ul>
+                        <li>Mise à jour du téléphone, design amelioré, optimisation, etc...</li>
+                        <li>Mise à jour Agent immobilier.</li>
+                        <li>Mise à jour de l'hopital et de tout le systeme de soins ( interface de soin, interface de mort, system de perte de sang, etc...)</li>
+                        <li>Mise à jour du job taxi.</li>
+                        <li>Mise a jour de mapping divers.</li>
+                    </ul>
+                `,
+                image: "image/patchnote13.jpg",
+            },
+            {
                 date: "04 Août 2024",
                 title: "Patchnote : 3.1.2",
                 description: "Ajout de mapping illégaux.",
