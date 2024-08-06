@@ -130,6 +130,7 @@ footer {
     font-size: 72px;
     margin: 0;
     color: white;
+    word-wrap: break-word;
 }
 
 .home-text .subtitle {
@@ -137,6 +138,7 @@ footer {
     margin-top: 10px;
     color: white;
     z-index: 1000;
+    word-wrap: break-word;
 }
 
 .home-video {
@@ -1305,5 +1307,45 @@ body.aides {
     .why-content ul li.why-item.left .why-image, 
     .why-content ul li.why-item.right .why-image {
         order: 1;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    header {
+        padding: 10px;
+    }
+
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+        display: block;
+        text-align: center;
+    }
+
+    .home-content {
+        padding: 20px;
+    }
+
+    .home-text h2 {
+        font-size: 48px;
+    }
+
+    .home-text .subtitle {
+        font-size: 24px;
+    }
+
+    .discord-button {
+        font-size: 18px;
+        padding: 10px 20px;
+        border-radius: 20px;
+    }
+
+    .scroll-down a {
+        font-size: 40px;
     }
 }
