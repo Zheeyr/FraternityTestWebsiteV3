@@ -629,6 +629,7 @@ body.patchnotes {
     font-size: 48px;
     font-weight: bold;
     margin-bottom: 20px;
+    margin-top: -30px;
 }
 
 .intro-description {
