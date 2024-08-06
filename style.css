@@ -130,7 +130,6 @@ footer {
     font-size: 72px;
     margin: 0;
     color: white;
-    word-wrap: break-word;
 }
 
 .home-text .subtitle {
@@ -138,7 +137,6 @@ footer {
     margin-top: 10px;
     color: white;
     z-index: 1000;
-    word-wrap: break-word;
 }
 
 .home-video {
