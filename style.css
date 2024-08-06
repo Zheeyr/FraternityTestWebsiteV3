@@ -1174,6 +1174,10 @@ body.aides {
         position: relative;
     }
 
+    .home-text h2 {
+        font-size: 48px;
+    }
+    
     nav ul {
         display: flex;
         flex-direction: column;
