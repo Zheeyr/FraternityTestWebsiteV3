@@ -70,6 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.querySelector(this.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
         });
     }
+
     window.scrollTo(0, 0);
     document.body.style.overflow = 'auto';
 
@@ -543,48 +544,59 @@ document.addEventListener('DOMContentLoaded', () => {
 
 const accordionHeaders = document.querySelectorAll('.accordion-header');
 
-accordionHeaders.forEach(header => {
-    header.addEventListener('click', () => {
-        const expanded = header.getAttribute('aria-expanded') === 'true' || false;
-        const icon = header.querySelector('.icon');
+    accordionHeaders.forEach(header => {
+        header.addEventListener('click', () => {
+            const expanded = header.getAttribute('aria-expanded') === 'true' || false;
+            const icon = header.querySelector('.icon');
 
-        accordionHeaders.forEach(h => {
-            h.setAttribute('aria-expanded', 'false');
-            h.nextElementSibling.style.maxHeight = null;
-            h.nextElementSibling.style.padding = '0 15px';
-            const icon = h.querySelector('.icon');
-            if (icon) icon.textContent = '+';
+            accordionHeaders.forEach(h => {
+                h.setAttribute('aria-expanded', 'false');
+                h.nextElementSibling.style.maxHeight = null;
+                h.nextElementSibling.style.padding = '0 15px';
+                const icon = h.querySelector('.icon');
+                if (icon) icon.textContent = '+';
+            });
+
+            if (!expanded) {
+                header.setAttribute('aria-expanded', 'true');
+                header.nextElementSibling.style.maxHeight = header.nextElementSibling.scrollHeight + 'px';
+                header.nextElementSibling.style.padding = '15px';
+                if (icon) icon.textContent = '-';
+            } else {
+                if (icon) icon.textContent = '+';
+            }
         });
+    });
 
-        if (!expanded) {
-            header.setAttribute('aria-expanded', 'true');
-            header.nextElementSibling.style.maxHeight = header.nextElementSibling.scrollHeight + 'px';
-            header.nextElementSibling.style.padding = '15px';
-            if (icon) icon.textContent = '-';
+    const backToTopButton = document.getElementById('back-to-top');
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            backToTopButton.style.display = 'block';
+            backToTopButton.style.opacity = '1';
         } else {
-            if (icon) icon.textContent = '+';
+            backToTopButton.style.opacity = '0';
+            setTimeout(() => {
+                backToTopButton.style.display = 'none';
+            }, 300);
         }
     });
-});
-
-const backToTopButton = document.getElementById('back-to-top');
-window.addEventListener('scroll', function () {
-    if (window.scrollY > 300) {
-        backToTopButton.style.display = 'block';
-        backToTopButton.style.opacity = '1';
-    } else {
-        backToTopButton.style.opacity = '0';
-        setTimeout(() => {
-            backToTopButton.style.display = 'none';
-        }, 300);
-    }
-});
-
-// Faire défiler vers le haut lorsqu'on clique sur le bouton
-backToTopButton.addEventListener('click', function () {
-    window.scrollTo({
-        top: 0,
-        behavior: 'smooth'
+    backToTopButton.addEventListener('click', function () {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
     });
-});
+
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function(e) {
+            if (this.href.includes('#')) return;
+            e.preventDefault();
+            const targetUrl = this.href;
+            document.body.classList.add('fade-out');
+            setTimeout(() => {
+                window.location.href = targetUrl;
+            }, 500);
+        });
+    });
+    document.body.classList.add('fade-in');
 });
