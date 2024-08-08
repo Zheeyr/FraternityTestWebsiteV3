@@ -723,7 +723,7 @@ body.patchnotes {
 }
 
 body.aides {
-    background-color: #1d1d1d;
+    background-color: #080808;
     color: #F6F6F6;
     font-family: 'Lexend', sans-serif;
 }
@@ -1326,6 +1326,7 @@ body.modal-open {
 
     .help-section {
         padding: 20px;
+        text-align: center;
     }
 
     .help-title {
