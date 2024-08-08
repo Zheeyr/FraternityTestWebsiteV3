@@ -59,7 +59,7 @@ nav ul li a::after {
     right: 0;
     bottom: 0;
     height: 2px;
-    background-color: #00ff80;
+    background-color: #17ab87;
     opacity: 0;
     transform: scaleX(0);
     transition: opacity 0.3s, transform 0.3s;
@@ -100,7 +100,7 @@ footer {
 #home {
     position: relative;
     text-align: center;
-    color: white;
+    color: #F6F6F6;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -129,13 +129,13 @@ footer {
 .home-text h2 {
     font-size: 72px;
     margin: 0;
-    color: white;
+    color: #F6F6F6;
 }
 
 .home-text .subtitle {
     font-size: 36px;
     margin-top: 10px;
-    color: white;
+    color: #F6F6F6;
     z-index: 1000;
 }
 
@@ -165,13 +165,13 @@ footer {
 }
 
 .discord-button:hover {
-    background-color: rgb(23, 171, 135, 0.5);
-    border-color: rgba(255, 255, 255, 1);
+    background-color: #17ab87;
+    border-color: #F6F6F6;
 }
 
 .discord-button:active
 {
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgba(246, 246, 246, 0.3);
     transform: scale(0.95);
 }
 
@@ -199,7 +199,7 @@ footer {
 }
 
 .dropdown-content a {
-    color: white;
+    color: #F6F6F6;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
@@ -235,7 +235,7 @@ footer {
     display: inline-block;
     width: 10px;
     height: 10px;
-    background-color: #03e775;
+    background-color: #17ab87;
     border-radius: 50%;
     margin-left: 5px;
     position: relative;
@@ -251,7 +251,7 @@ footer {
     height: 10px;
     margin-top: -7px;
     margin-left: -7px;
-    border: 2px solid #00ff80;
+    border: 2px solid #17ab87;
     border-radius: 50%;
     opacity: 0;
     animation: pulse 1.5s infinite;
@@ -267,31 +267,31 @@ footer {
     display: block;
     margin-top: 20px;
     font-size: 80px;
-    color: white;
+    color: #F6F6F6;
     text-decoration: none;
     animation: bounce 2s infinite;
     transition: color 0.3s ease-in-out;
 }
 
 .scroll-down a:hover {
-    color: #00ff80;
+    color: #17ab87;
 }
 
 .scroll-arrow {
     font-size: 45px;
-    color: white;
+    color: #F6F6F6;
     text-decoration: none;
     animation: bounce 2s infinite;
 }
 
 .scroll-arrow:hover {
-    color: #00ff80;
+    color: #17ab87;
 }
 
 #video-content {
     position: relative;
     text-align: center;
-    color: white;
+    color: #F6F6F6;
     height: 100vh;
     margin: 0;
     padding: 0;
@@ -305,7 +305,7 @@ footer {
 #video-section {
     position: relative;
     text-align: center;
-    color: white;
+    color: #F6F6F6;
     min-height: 100vh;
     margin: 0;
     padding: 0;
@@ -364,7 +364,7 @@ footer {
     text-align: center; 
     font-size: 24px;
     line-height: 1.6;
-    color: #ffffff;
+    color: #F6F6F6;
     margin-right: 40px;
 }
 
@@ -394,7 +394,7 @@ footer {
     border: 2px solid white;
     transition: background-color 0.3s ease, transform 0.3s ease, border-color 0.3s ease;
     text-align: center;
-    color: white;
+    color: #F6F6F6;
 }
 
 .welcome-video {
@@ -458,16 +458,16 @@ footer {
 #lore::before {
     top: 0;
     left: 0;
-    border-top: 2px solid #00ff80;
-    border-left: 2px solid #00ff80;
+    border-top: 2px solid #17ab87;
+    border-left: 2px solid #17ab87;
     animation: borderAnimationTop 10s ease-in-out infinite;
 }
 
 #lore::after {
     bottom: 0;
     right: 0;
-    border-bottom: 2px solid #00ff80;
-    border-right: 2px solid #00ff80;
+    border-bottom: 2px solid #17ab87;
+    border-right: 2px solid #17ab87;
     animation: borderAnimationBottom 10s ease-in-out infinite;
 }
 
@@ -519,7 +519,7 @@ footer {
 }
 
 .lore-header h1, .lore-header p {
-    color: #ffffff;
+    color: #F6F6F6;
 }
 
 .lore-content {
@@ -554,7 +554,7 @@ footer {
     text-align: left;
     font-size: 18px;
     line-height: 1.6;
-    color: #ffffff;
+    color: #F6F6F6;
     margin: 0 auto;
 }
 
@@ -564,14 +564,14 @@ footer {
 }
 
 .green-text {
-    color: #00ff80;
+    color: #17ab87;
 }
 
 /* PATCH NOTES  */
 
 body.patchnotes {
     background-color: #0f0f12;
-    color: #ffffff;
+    color: #F6F6F6;
     font-family: 'Lexend', sans-serif;
     margin: 0;
     padding: 0;
@@ -632,7 +632,7 @@ body.patchnotes {
 .patch-item .meta .dot {
     width: 4px;
     height: 4px;
-    background-color: rgb(0, 255, 98);
+    background-color: #17ab87;
     border-radius: 50%;
     margin: 0 10px;
 }
@@ -640,16 +640,16 @@ body.patchnotes {
 .patch-item h2 {
     margin: 0;
     font-size: 20px;
-    color: #ffffff;
+    color: #F6F6F6;
 }
 
 .patch-item p {
     margin: 5px 0;
-    color: #ffffff;
+    color: #F6F6F6;
 }
 
 .highlight-green {
-    background-color: #00ff00;
+    background-color: #17ab87;
     color: #333;
     padding: 2px 4px;
     border-radius: 4px;
@@ -678,7 +678,7 @@ body.patchnotes {
     background-color: #181818;
     margin: auto;
     padding: 20px;
-    border: 1px solid #004e11;
+    border: 1px solid #17ab87;
     width: 80%;
     max-width: 600px;
     border-radius: 10px;
@@ -686,7 +686,7 @@ body.patchnotes {
 }
 
 .green-text p {
-    color: #00ff00;
+    color: #17ab87;
 }
 
 .blue-text {
@@ -705,7 +705,7 @@ body.patchnotes {
 .intro-section {
     background-color: #0f0f12;
     text-align: center;
-    color: white;
+    color: #F6F6F6;
 }
 
 .intro-title {
@@ -720,12 +720,12 @@ body.patchnotes {
     line-height: 1.6;
     max-width: 800px;
     margin: 0 auto;
-    color: #ffffff;
+    color: #F6F6F6;
 }
 
 body.aides {
     background-color: #1d1d1d;
-    color: white;
+    color: #F6F6F6;
     font-family: 'Lexend', sans-serif;
 }
 
@@ -761,7 +761,7 @@ body.aides {
     padding: 10px;
     font-size: 16px;
     background-color: #333;
-    color: white;
+    color: #F6F6F6;
     border: 1px solid #333;
     border-radius: 0 5px 5px 0;
     cursor: pointer;
@@ -864,7 +864,7 @@ body.aides {
     display: inline-block;
     padding: 10px 20px;
     background-color: #7289da;
-    color: white;
+    color: #F6F6F6;
     text-decoration: none;
     border-radius: 5px;
     transition: background-color 0.3s ease;
@@ -883,7 +883,7 @@ body.aides {
     border: none;
     outline: none;
     background-color: #333;
-    color: white;
+    color: #F6F6F6;
     cursor: pointer;
     padding: 10px;
     border-radius: 5px;
@@ -972,7 +972,7 @@ body.modal-open {
 
 .underline-green {
     text-decoration: underline;
-    text-decoration-color: #00ff00;
+    text-decoration-color: #17ab87;
     text-decoration-thickness: 2px;
 }
 
@@ -997,7 +997,7 @@ body.modal-open {
 }
 .loading-text {
     font-size: 24px;
-    color: white;
+    color: #F6F6F6;
     margin-bottom: 20px;
 }
 
@@ -1012,7 +1012,7 @@ body.modal-open {
 .loading-progress {
     height: 100%;
     width: 0;
-    background-color: #00ff80;
+    background-color: #17ab87;
     transition: width 0.1s ease-in-out;
 }
 
@@ -1039,8 +1039,8 @@ body.modal-open {
 }
 
 #subtitle .hover-effect:hover#imagine {
-    color: white;
-    text-shadow: 0 0 5px rgba(255, 255, 255, 1), 0 0 10px rgba(255, 255, 255, 1), 0 0 15px rgba(255, 255, 255, 1), 0 0 20px rgba(255, 255, 255, 1);
+    color: #F6F6F6;
+    text-shadow: 0 0 5px rgba(246, 246, 246, 1), 0 0 10px rgba(246, 246, 246, 1), 0 0 15px rgba(246, 246, 246, 1), 0 0 20px rgba(246, 246, 246, 1);
 }
 
 #subtitle .hover-effect:hover#play {
@@ -1165,7 +1165,7 @@ body.modal-open {
 .why-text h3 {
     font-size: 24px;
     margin-bottom: 5px;
-    color: #00ff80;
+    color: #17ab87;
 }
 
 .why-image img {
