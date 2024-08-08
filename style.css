@@ -570,7 +570,7 @@ footer {
 /* PATCH NOTES  */
 
 body.patchnotes {
-    background-color: #0f0f12;
+    background-color: #080808;
     color: #F6F6F6;
     font-family: 'Lexend', sans-serif;
     margin: 0;
@@ -703,7 +703,7 @@ body.patchnotes {
 
 
 .intro-section {
-    background-color: #0f0f12;
+    background-color: #080808;
     text-align: center;
     color: #F6F6F6;
 }
